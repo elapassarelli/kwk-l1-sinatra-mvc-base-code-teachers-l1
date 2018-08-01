@@ -1,1 +1,20 @@
+<html>
 
+<head>
+  <title>oh shittt</title>
+</head>
+
+<body>
+ <p>"Hey my name is <%=@name%> and I am great!"</p>
+ <p>I'm going to pick an number from 1 to 100.</p>
+ <p><%=@rand=rand(1..100)%></p>
+ 
+ <p> The random number I picked is <% if @rand%2==0%> 
+                                        <%="even"%> 
+                                     <%   else %>
+                                        <%= "odd" %>
+                                     <%   end %>
+                                        </p>
+</body>
+
+</html> 
